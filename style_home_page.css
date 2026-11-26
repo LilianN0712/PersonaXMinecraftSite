@@ -277,3 +277,198 @@ position: relative;
     top: 3.2vw;
     z-index: -1;
 }  
+
+/* === ADAPTATION MOBILE ÉQUILIBRÉE AVEC DÉCORATIONS (EN VW) === */
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  body {
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #theme-toggle {
+    align-self: flex-start;
+    font-size: 3.6vw;
+    padding: 2vw 3.5vw;
+    border-radius: 2vw;
+    margin-bottom: 3vw;
+    cursor: pointer;
+  }
+
+  /* Titre + Steve équilibré en haut */
+  h1 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 2vw 0 4vw 0;
+    line-height: 1.25;
+  }
+
+  h1 .debut,
+  h1 .milieu,
+  h1 .fin {
+    position: static;
+    width: auto;
+    font-size: 6.2vw;
+    display: inline-block;
+    margin: 0 0.8vw;
+  }
+
+  #Steve {
+    position: relative;
+    width: 18vw;
+    left: auto;
+    top: auto;
+    align-self: flex-end;
+    margin: -6vw 2vw 2vw 0;
+  }
+
+  /* Sous-titre "LES PAGES DU SITE :" */
+  h2 {
+    position: static;
+    transform: rotate(-3deg);
+    width: 100%;
+    text-align: center;
+    margin: 2vw 0 5vw 0;
+    order: 2;
+  }
+
+  h2 .debut,
+  h2 .milieu,
+  h2 .milieu2,
+  h2 .fin {
+    position: static;
+    width: auto;
+    font-size: 4.5vw;
+    display: inline-block;
+    margin: 0 0.8vw;
+  }
+
+  /* Navigation équilibrée */
+  nav {
+    width: 100%;
+    order: 3;
+  }
+
+  nav ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vw;
+  }
+
+  nav ol li {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  .n1,
+  .n2,
+  .n3 {
+    position: static;
+    width: 82vw;
+    height: auto;
+    padding: 3.5vw 3vw;
+    line-height: 1.2;
+    list-style-type: none;
+    border-radius: 2vw;
+  }
+
+  .n1 {
+    font-size: 4.8vw;
+    background-size: 9vw;
+    transform: rotate(-2deg);
+  }
+
+  #Pioche {
+    position: static;
+    width: 8vw;
+    left: auto;
+    top: auto;
+    transform: rotate(-10deg);
+  }
+
+  .n2 {
+    font-size: 5.2vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 0.5vw solid #ba0a0a;
+    transform: rotate(2deg);
+  }
+
+  #Bouton_Noir {
+    position: static;
+    width: 34vw;
+    left: auto;
+    top: auto;
+    z-index: 1;
+  }
+
+  #Phantom_Logo {
+    position: static;
+    width: 15vw;
+    left: auto;
+    top: auto;
+  }
+
+  .n3 {
+    font-size: 6.2vw;
+    background-color: rgba(20, 20, 20, 0.85);
+    border: 0.5vw solid white;
+    transform: rotate(-2deg);
+  }
+
+  /* Groupe Jack + Joker côte à côte en harmonie */
+  #Jack,
+  #Joker {
+    position: static;
+    left: auto;
+    top: auto;
+    z-index: 1;
+  }
+
+  #Jack {
+    width: 28vw;
+    transform: rotate(8deg);
+  }
+
+  #Joker {
+    width: 16vw;
+    transform: rotate(-4deg);
+  }
+
+  /* Vidéo centrée */
+  video {
+    position: static;
+    width: 92vw;
+    margin: 6vw 0 4vw 0;
+    order: 4;
+    border-radius: 2vw;
+  }
+
+  /* Logo en bas centré */
+  #Logo {
+    position: static;
+    width: 22vw;
+    left: auto;
+    top: auto;
+    margin: 3vw auto 5vw auto;
+    order: 5;
+  }
+}
