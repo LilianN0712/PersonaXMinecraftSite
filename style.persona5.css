@@ -1,0 +1,277 @@
+
+@font-face {
+  font-family: "MaPolice";
+  src: url("Font/minecraft.ttf") format("truetype"); 
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  font-family: "MaPolice", monospace;
+  color: white;
+  background-color: #4a3426;
+  background-image: url("Asset/fond.png");
+  background-size: 3000px; 
+  image-rendering: pixelated;
+}
+
+.titre {
+  text-align: center;
+  font-size: 64px;
+  margin: 10px 0 30px;
+  text-shadow: 4px 4px 0 #000;
+}
+.titre img {
+  height: 60px;
+  vertical-align: middle;
+  margin: 0 15px;
+}
+
+.panneau {
+  position: absolute;
+  top: 0;
+  right: 200px;
+  width: 300px;
+}
+
+.panneau-fond {
+  width: 100%;
+  display: block;
+  image-rendering: pixelated;
+}
+
+.panneau-perso {
+  position: absolute;
+  top: 50%;
+  left: 13%;
+  width: 75%;
+  height: auto;
+}
+
+.menu {
+  width: 1100px;
+  max-width: 95%;
+  margin: 60px 0 0 80px;
+
+  border-style: solid;
+  border-width: 37px 24px 19px 24px;     
+  border-image-source: url("Asset/window.png");
+  border-image-slice: 92 61 47 60 fill; 
+  border-image-repeat: stretch;
+  image-rendering: pixelated;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 33px 20px 10px 20px;
+  min-height: 400px;
+}
+
+.lien-atlus {
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+}
+.lien-atlus:hover { text-decoration: underline; color: #ffff55; }
+
+.bouton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex: none;
+
+  width: 260px;
+  height: 56px;
+  text-decoration: none;
+
+  border-style: solid;
+  border-width: 10px;
+  border-image-source: url("Asset/bouton.png");
+  border-image-slice: 12% fill;     
+  border-image-repeat: stretch;
+  image-rendering: pixelated;
+
+  color: #222;
+  font-size: 24px;
+}
+
+.bouton:hover { color: white; }
+
+.presentation {
+  text-align: center;
+  font-size: 30px;
+  margin: 60px 0 0;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+  padding-left: 50px;
+}
+.description p {
+  font-size: 30px;
+  margin: 0;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.cadre {
+  width: 260px;
+  height: 250px;
+  padding: 14px;
+
+  background-image: url("Asset/cadre.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  transform: rotate(-8deg);
+  flex-shrink: 0;
+}
+
+.cadre img {
+  width: 90%;
+  display: block;
+  margin: 15px auto 0;
+}
+
+.texte {
+  margin: 40px 0 0 145px;
+  padding-bottom: 160px;
+}
+.texte p {
+  font-size: 26px;
+  line-height: 1.4;
+  margin: 0;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.coin {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 220px;
+}
+
+.theme-bouton {
+  display: block;
+  margin: 40px auto;
+  padding: 15px 30px;
+
+  font-family: "MaPolice", monospace;
+  font-size: 20px;
+  cursor: pointer;
+
+  background: #222;
+  color: white;
+  border: 4px solid white;
+}
+
+.theme-bouton:hover {
+  background: white;
+  color: black;
+}
+
+body.theme-clair {
+  background-image: url("Asset/fond2.png");
+  color: black;
+}
+
+body.theme-clair .presentation,
+body.theme-clair .description p,
+body.theme-clair .texte p {
+  color: black;
+  text-shadow: none;
+}
+
+body.theme-clair .lien-atlus {
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+
+  body {
+    background-size: auto 100%;
+    background-position: center;
+  }
+
+  .titre {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+
+  .titre img {
+    height: 35px;
+    margin: 0 5px;
+  }
+
+  .panneau {
+    position: relative;
+    width: 180px;
+    right: auto;
+    top: auto;
+    margin: 20px auto;
+  }
+
+  .menu {
+    width: 90%;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 25px 15px;
+  }
+
+  .lien-atlus {
+    font-size: 18px;
+  }
+
+  .bouton {
+    width: 220px;
+    max-width: 100%;
+    font-size: 18px;
+  }
+
+  .presentation {
+    font-size: 20px;
+    margin: 30px 15px;
+  }
+
+  .description {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 30px;
+  }
+
+  .cadre {
+    width: 220px;
+  }
+
+  .description p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .texte {
+    margin: 30px 20px 0;
+    padding-bottom: 120px;
+  }
+
+  .texte p {
+    font-size: 18px;
+  }
+
+  .coin {
+    width: 120px;
+  }
+
+  .theme-bouton {
+    font-size: 16px;
+    margin: 30px auto;
+  }
+}
