@@ -29,14 +29,6 @@ body {
     text-shadow: 0.5vw 0.5vh 0vw rgba(0,0,0,1);
 }
 
-.text_noire{
-    color: black;
-    font-family: Minecraftia;
-    font-size: 1.5vw;
-    text-shadow: 0.5vw 0.5vh 0vw rgba(0,0,0,1);
-}
-
-
 .image-button {
     display: inline-flex;
     align-items: center;
@@ -60,17 +52,12 @@ body {
 
 #table{
     border: 60px solid transparent;
-    padding: 3x;
+    padding: 1vw;
     border-image: url(./Asset/window.png) round;
     border-image-slice: 15%;
     margin-left: 4vw;
     margin-right: auto;
     background-image: url(./Asset/Minecraft_Background_Foncee.png);
-}
-
-nav{
-    margin-left: 0%;
-    
 }
 
 input {
@@ -93,6 +80,7 @@ textarea{
 #logo{
     width: 15vw;
     height: auto;
+    float: right;
 }
 
 
@@ -113,10 +101,6 @@ textarea{
 
 #theme_text{
     margin-left: 1vw;
-}
-
-body:has(#theme_changer:checked) #theme_label {
-    color: black;
 }
 
 #button_image {
