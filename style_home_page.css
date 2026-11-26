@@ -399,6 +399,10 @@ position: relative;
     margin-right: 1vw;
   }
 
+  .n1::marker {
+    content: none;
+  }
+
   .bouton_persona5 {
     position: static;
     font-size: 4.5vw;
@@ -424,6 +428,7 @@ position: relative;
     transform: translate(-4vw, 17.5vw) rotate(-6deg);
     z-index: 5;
     pointer-events: none;
+    text-shadow: none;
     counter-increment: item;
   }
 
@@ -434,10 +439,15 @@ position: relative;
     margin-right: 1vw;
   }
 
+  .n2::marker {
+    content: none;
+  }
+
   .bouton_minecraft {
     position: relative;
     pointer-events: auto;
     color: rgba(205, 15, 15, 0.95);
+    text-shadow: none;
   }
 
   #Bouton_Noir {
@@ -469,6 +479,7 @@ position: relative;
     transform: translate(-1vw, 5.5vw) rotate(4deg);
     z-index: 5;
     pointer-events: none;
+    text-shadow: none;
     counter-increment: item;
   }
 
@@ -479,11 +490,16 @@ position: relative;
     margin-right: 1vw;
   }
 
+  .n3::marker {
+    content: none;
+  }
+
   .bouton_Sondage {
     position: relative;
     pointer-events: auto;
     color: #ffffff;
     font-size: 11vw;
+    text-shadow: none;
   }
 
   #Jack {
