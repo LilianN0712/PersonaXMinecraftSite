@@ -277,7 +277,6 @@ position: relative;
     top: 3.2vw;
     z-index: -1;
 }  
-/* === MAQUETTE MOBILE EN VW (TEXTES SUR BOUTONS & DÉCOS CONSERVÉES) === */
 @media (max-width: 768px) {
   html, body {
     width: 100%;
@@ -306,7 +305,6 @@ position: relative;
     border-radius: 1.5vw;
   }
 
-  /* Titre principal */
   h1 {
     position: static;
     width: 100%;
@@ -329,7 +327,6 @@ position: relative;
     margin: 0 0.6vw;
   }
 
-  /* Steve sous le titre à droite */
   #Steve {
     position: relative;
     left: auto;
@@ -337,7 +334,7 @@ position: relative;
     top: auto;
     align-self: flex-end;
     width: 16vw;
-    margin: -1vw 1.5vw -2vw 0;
+    margin: -1vw 1.5vw -3vw 0;
   }
 
   /* Sous-titre remonté */
@@ -347,7 +344,7 @@ position: relative;
     right: auto;
     top: auto;
     width: 100%;
-    margin: -1.5vw 0 2.5vw 0;
+    margin: -4vw 0 1.5vw 0;
     text-align: center;
     transform: rotate(-4deg);
     order: 2;
@@ -367,7 +364,6 @@ position: relative;
     margin: 0 0.5vw;
   }
 
-  /* Liste et boutons */
   nav {
     position: static;
     width: 100%;
@@ -408,7 +404,7 @@ position: relative;
     width: 74vw;
     height: 11vw;
     padding: 0 3vw;
-    margin-left: 4vw;
+    margin-left: 2vw;
     font-size: 4.5vw;
     line-height: 11vw;
     background-size: 11vw;
@@ -442,13 +438,13 @@ position: relative;
     right: auto;
     top: auto;
     width: 8.5vw;
-    margin-left: 2.5vw;
-    margin-top: 5vw;
+    margin-left: 8vw;
+    margin-top: 6vw;
     transform: rotate(-12deg);
     z-index: 3;
   }
 
-  /* 2. MINECRAFT SUR #BOUTON_NOIR (SANS OMBRE) */
+  /* 2. MINECRAFT SUR #BOUTON_NOIR */
   .n2 {
     position: relative;
     left: auto;
@@ -457,7 +453,7 @@ position: relative;
     width: auto;
     height: auto;
     padding: 0;
-    margin: 4vw 0 -9.5vw -14vw;
+    margin: 9vw 0 -15vw -18vw;
     font-size: 4.8vw;
     line-height: 1.1;
     transform: rotate(-6deg);
@@ -519,11 +515,11 @@ position: relative;
     left: auto;
     right: auto;
     top: auto;
-    width: 72vw;
+    width: 82vw;
     height: auto;
     padding: 0;
-    margin: 4vw 0 -10.5vw -2vw;
-    font-size: 8.5vw;
+    margin: 5vw 0 -11vw -4vw;
+    font-size: 9.5vw;
     line-height: 1;
     text-align: center;
     transform: rotate(4deg);
@@ -552,6 +548,7 @@ position: relative;
     top: auto;
     pointer-events: auto;
     color: #ffffff;
+    font-size: 9.5vw;
     text-shadow: none;
   }
 
@@ -560,7 +557,7 @@ position: relative;
     left: auto;
     right: auto;
     top: auto;
-    width: 58vw;
+    width: 62vw;
     margin-top: 0;
     margin-left: 2vw;
     transform: rotate(4deg);
@@ -574,11 +571,10 @@ position: relative;
     top: auto;
     width: 18vw;
     margin-top: -18vw;
-    margin-left: -12vw;
+    margin-left: -14vw;
     z-index: 1;
   }
 
-  /* Vidéo en bas + Logo à droite */
   video {
     position: static;
     left: auto;
