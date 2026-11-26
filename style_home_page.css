@@ -440,7 +440,7 @@ position: relative;
     top: auto;
     width: 8.5vw;
     margin-left: 9.5vw;
-    margin-top: 2.5vw;
+    margin-top: 0vw;
     transform: rotate(-12deg);
     z-index: 3;
   }
