@@ -41,9 +41,7 @@
                 </tr>
             </table>
 
-            <form id="sondage" action="https://formsubmit.co/example@mail.com" method="POST">
-
-                <input type="hidden" name="_subject" value="Nouveau sondage !">
+            <form id="sondage" action="mailto:example@mail.com" method="POST" enctype="text/plain">
 
                 <p class="text_blanc">Qu'en pensez-vous ? On vous répond !</p>
 
@@ -73,6 +71,23 @@
 
 
         </div>
+        <script>
+            document.getElementById("sondage").addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                const form = event.currentTarget;
+                const subject = encodeURIComponent("Nouveau sondage !");
+                const body = encodeURIComponent(
+                    "Pseudo : " + form.pseudo.value + "\n" +
+                    "Age : " + form.age.value + "\n" +
+                    "Mail : " + form.email.value + "\n" +
+                    "Telephone : " + form.phone.value + "\n" +
+                    "Avis : " + form.avis.value
+                );
+
+                window.location.href = "mailto:example@mail.com?subject=" + subject + "&body=" + body;
+            });
+        </script>
         <footer>
             <img id = "logo" src="./Asset/Logo.png" alt ="logo">
         </footer>
