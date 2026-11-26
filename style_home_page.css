@@ -399,7 +399,7 @@ position: relative;
     align-items: center;
   }
 
-  /* --- 1. PERSONA 5 ROYAL + PIOCHE --- */
+/* --- 1. PERSONA 5 ROYAL + PIOCHE --- */
   .n1 {
     position: relative;
     left: auto;
@@ -408,7 +408,7 @@ position: relative;
     width: 76vw;
     height: 11vw;
     padding: 0 3vw;
-    margin-left: 6vw;
+    margin-left: 8vw;
     font-size: 4.6vw;
     line-height: 11vw;
     background-size: 11vw;
@@ -448,7 +448,7 @@ position: relative;
     z-index: 3;
   }
 
-  /* --- 2. MINECRAFT SUR #BOUTON_NOIR + PHANTOM LOGO --- */
+  /* --- 2. MINECRAFT SUR #BOUTON_NOIR + PHANTOM LOGO (SANS OMBRE) --- */
   .n2 {
     position: relative;
     left: auto;
@@ -457,7 +457,7 @@ position: relative;
     width: auto;
     height: auto;
     padding: 0;
-    margin: 3vw 0 0 -10vw;
+    margin: 7.5vw 0 0 -16vw;
     font-size: 4.8vw;
     line-height: 1.1;
     transform: rotate(-6deg);
@@ -471,6 +471,7 @@ position: relative;
     color: rgba(186, 10, 10, 0.9);
     font-family: Minecraft;
     margin-right: 1vw;
+    text-shadow: none;
   }
 
   .n2::marker {
@@ -484,7 +485,7 @@ position: relative;
     top: auto;
     pointer-events: auto;
     color: rgba(205, 15, 15, 0.95);
-    text-shadow: 0.4vw 0.4vw 0px rgba(0, 0, 0, 0.9);
+    text-shadow: none;
   }
 
   #Bouton_Noir {
@@ -511,7 +512,7 @@ position: relative;
     z-index: 2;
   }
 
-  /* --- 3. SONDAGE SUR #JACK + JOKER --- */
+  /* --- 3. SONDAGE SUR #JACK + JOKER (SANS OMBRE) --- */
   .n3 {
     position: relative;
     left: auto;
@@ -526,6 +527,7 @@ position: relative;
     transform: rotate(4deg);
     z-index: 4;
     pointer-events: none;
+    text-shadow: none;
     counter-increment: item;
   }
 
@@ -534,7 +536,7 @@ position: relative;
     color: #ffffff;
     font-family: Minecraft;
     margin-right: 1vw;
-    text-shadow: 0.4vw 0.4vw 0px rgba(0, 0, 0, 0.85);
+    text-shadow: none;
   }
 
   .n3::marker {
@@ -548,7 +550,7 @@ position: relative;
     top: auto;
     pointer-events: auto;
     color: #ffffff;
-    text-shadow: 0.4vw 0.4vw 0px rgba(0, 0, 0, 0.85);
+    text-shadow: none;
   }
 
   #Jack {
