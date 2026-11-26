@@ -288,7 +288,7 @@ position: relative;
 
   body {
     box-sizing: border-box;
-    padding: 11vw 3vw 5vw 3vw;
+    padding: 4vw 3vw 6vw 3vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -334,17 +334,17 @@ position: relative;
     top: auto;
     align-self: flex-end;
     width: 16vw;
-    margin: -1vw 1.5vw -3vw 0;
+    margin: -1vw 1.5vw -4vw 0;
   }
 
-  /* Sous-titre remonté */
+  /* LES PAGES DU SITE remonté */
   h2 {
     position: relative;
     left: auto;
     right: auto;
     top: auto;
     width: 100%;
-    margin: -4vw 0 1.5vw 0;
+    margin: -5vw 0 1.5vw 0;
     text-align: center;
     transform: rotate(-4deg);
     order: 2;
@@ -404,7 +404,7 @@ position: relative;
     width: 74vw;
     height: 11vw;
     padding: 0 3vw;
-    margin-left: 2vw;
+    margin-left: 0;
     font-size: 4.5vw;
     line-height: 11vw;
     background-size: 11vw;
@@ -438,13 +438,13 @@ position: relative;
     right: auto;
     top: auto;
     width: 8.5vw;
-    margin-left: 8vw;
+    margin-left: 11vw;
     margin-top: 6vw;
     transform: rotate(-12deg);
     z-index: 3;
   }
 
-  /* 2. MINECRAFT SUR #BOUTON_NOIR */
+  /* 2. MINECRAFT SUR #BOUTON_NOIR (SANS OMBRE) */
   .n2 {
     position: relative;
     left: auto;
@@ -453,11 +453,11 @@ position: relative;
     width: auto;
     height: auto;
     padding: 0;
-    margin: 9vw 0 -15vw -18vw;
+    margin: 2vw 0 -13vw 0;
     font-size: 4.8vw;
     line-height: 1.1;
-    transform: rotate(-6deg);
-    z-index: 4;
+    transform: translate(-11vw, 15vw) rotate(-6deg);
+    z-index: 5;
     pointer-events: none;
     text-shadow: none;
     counter-increment: item;
@@ -465,7 +465,7 @@ position: relative;
 
   .n2::before {
     content: counter(item) ":";
-    color: rgba(186, 10, 10, 0.9);
+    color: rgba(186, 10, 10, 0.95);
     font-family: Minecraft;
     margin-right: 1vw;
     text-shadow: none;
@@ -515,14 +515,14 @@ position: relative;
     left: auto;
     right: auto;
     top: auto;
-    width: 82vw;
+    width: 88vw;
     height: auto;
     padding: 0;
-    margin: 5vw 0 -11vw -4vw;
-    font-size: 9.5vw;
+    margin: 4vw 0 -10vw 0;
+    font-size: 11vw;
     line-height: 1;
     text-align: center;
-    transform: rotate(4deg);
+    transform: translate(-1vw, 2vw) rotate(4deg);
     z-index: 5;
     pointer-events: none;
     text-shadow: none;
@@ -548,7 +548,7 @@ position: relative;
     top: auto;
     pointer-events: auto;
     color: #ffffff;
-    font-size: 9.5vw;
+    font-size: 11vw;
     text-shadow: none;
   }
 
@@ -557,7 +557,7 @@ position: relative;
     left: auto;
     right: auto;
     top: auto;
-    width: 62vw;
+    width: 64vw;
     margin-top: 0;
     margin-left: 2vw;
     transform: rotate(4deg);
