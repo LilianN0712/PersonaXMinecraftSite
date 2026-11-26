@@ -1,0 +1,258 @@
+body{
+    background-image: url(./Asset/Persona5background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: Persona5;
+    src: url(./Font/Persona5MenuFontPrototype-Regular.ttf);
+}
+
+@font-face {
+    font-family: Minecraft;
+    src: url(./Font/Minecraft.ttf);
+}
+
+@font-face {
+    font-family: Persona_Aura;
+    src: url(./Font/PersonaAura.otf);
+}
+
+@counter-style nums {
+  system: fixed;
+  symbols: '1' '2' '3' '4' '5' '6' '7' '8' '9' '10';
+  suffix: ":";
+}
+
+h1 .debut{
+font-family: Persona5;
+  color: white;
+  font-size: 3.5vw;
+  position: relative;
+  left: 36vw;
+  top: 2vw;
+  width: 28vw;
+}
+
+h1 .milieu{
+font-family: Persona5;
+  color: black;
+  font-size: 3.5vw;
+  position: relative;
+  left: 36.5vw;
+  top: 2vw;
+  width: 28vw;
+}
+
+h1 .fin{
+font-family: Persona5;
+  color: #14ae5c;
+  font-size: 3.5vw;
+  position: relative;
+  left: 37vw;
+  top: 2vw;
+  width: 28vw;
+}
+
+#Steve{
+position: relative;
+  width: 12vw;
+  left: 87vw;
+  top: -6vw;
+}
+
+#Logo{
+position: relative;
+  width: 15vw;
+  left: 72vw;
+  top: 63.2vw;
+}
+
+h2 .debut{
+    font-family: Persona5;
+    color: rgb(144, 139, 139);
+    font-size: 2vw;
+    position: relative;
+    left: 40vw;
+    top: -10vw;
+    width: 2vw;
+}
+
+h2 .milieu{
+    font-family: Persona5;
+    color: rgb(255, 255, 255);
+    font-size: 2vw;
+    position: relative;
+    left: 40.5vw;
+    top: -10vw;
+    width: 2vw;
+}
+
+h2 .milieu2{
+    font-family: Persona5;
+    color: rgb(144, 139, 139);
+    font-size: 2vw;
+    position: relative;
+    left: 41vw;
+    top: -10vw;
+    width: 2vw;
+}
+
+h2 .fin{
+    font-family: Persona5;
+    color: rgb(255, 255, 255);
+    font-size: 2vw;
+    position: relative;
+    left: 41.5vw;
+    top: -10vw;
+    width: 2vw;
+}
+
+h2{
+ transform: rotate(-7deg);
+  position: relative;
+  left: 9vw;
+  width: 50vw;
+  top: -29vw;
+  margin: 0vw;
+}
+
+video{
+position: relative;
+  left: 10vw;
+  top: -5vw;
+  width: 37vw;
+}
+
+.n1::marker{
+    color: #14ae5c;
+    font-family: Persona5;
+}
+
+.n1{
+position: relative;
+  left: 48vw;
+  top: 8vw;
+  width: 20vw;
+  height: 5vw;
+  background-image: url(./Asset/grass\ minecraft.jpg);
+  background-size: 3vw;
+  padding: 0vw 3.5vw 0.2vw 0vw;
+  background-repeat: repeat-x;
+  color: white;
+  font-family: Minecraft;
+  font-size: 2vw;
+  text-align: center;
+  line-height: 3vw;
+  transform: rotate(15deg);
+  margin: 0vw;
+  list-style-type: nums;
+  list-style-position: inside;
+}
+
+.bouton_persona5{
+    position: relative;
+    color: white;
+    font-family: Minecraft;
+    text-decoration: none;
+    text-shadow: 5px 5px 5px black;
+}
+
+#Pioche{
+    position: relative;
+    width: 3.5vw;
+    left: 15vw;
+    top: -3.5vw;
+    transform: rotate(-10deg);
+}
+
+#Bouton_Noir{
+position: relative;
+  width: 20vw;
+  left: 50vw;
+  top: 2.5vw;
+  z-index: -1;
+}
+
+.n2{
+position: relative;
+  left: 50vw;
+  top: 13vw;
+  width: 20vw;
+  height: 5vw;
+  color: rgba(186, 10, 10, 0.782);
+  font-family: Persona5;
+  font-size: 2.3vw;
+  text-align: center;
+  line-height: 3vw;
+  transform: rotate(-14deg);
+  margin: 0vw;
+  list-style-type: nums;
+  list-style-position: inside;
+}
+
+.n2::marker{
+    color: rgba(186, 10, 10, 0.782);
+    font-family: Minecraft;
+}
+
+.bouton_minecraft{
+    position: relative;
+    color: rgba(186, 10, 10, 0.782);
+    font-family: Persona5;
+    text-decoration: none;
+}
+
+#Phantom_Logo{
+position: relative;
+  width: 7vw;
+  left: 42vw;
+  top: 0.5vw;
+}
+
+.n3{
+    position: relative;
+    left: 45vw;
+    top: 11vw;
+    width: 46vw;
+    height: 5vw;
+    color: rgb(255, 255, 255);
+    font-family: Persona_Aura;
+    font-size: 4.3vw;
+    text-align: center;
+    line-height: 3vw;
+    transform: rotate(16deg);
+    margin: 0vw;
+    list-style-type: nums;
+    list-style-position: inside;
+}
+
+.n3::marker{
+    color: rgba(255, 255, 255);
+    font-family: Minecraft;
+}
+
+.bouton_Sondage{
+    position: relative;
+    color: rgba(255, 255, 255);
+    font-family: Persona_Aura;
+    text-decoration: none;
+}
+
+#Jack{
+    position: relative;
+    width: 20vw;
+    left: 59vw;
+    top: 1.5vw;
+    transform: rotate(17deg);
+    z-index: -1;
+}
+
+#Joker{
+    position: relative;
+    width: 7vw;
+    left: 51vw;
+    top: 3.2vw;
+    z-index: -1;
+}  
