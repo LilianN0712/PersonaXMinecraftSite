@@ -277,6 +277,29 @@ position: relative;
     top: 3.2vw;
     z-index: -1;
 }  
+.site-footer {
+  width: 100%;
+  text-align: center;
+  padding: 1.5vw 1vw;
+  margin-top: 4vw;
+  background-color: rgba(0, 0, 0);
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 1.2vw;
+  box-sizing: border-box;
+  order: 6;
+}
+
+.site-footer{
+  margin: 0 0 0.8vw 0;
+}
+
+.social-links{
+  color: #14ae5c;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 0.8vw;
+}
  @media (max-width: 768px) {
 html, body {
 width: 100%;
