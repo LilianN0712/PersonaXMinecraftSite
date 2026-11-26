@@ -334,17 +334,17 @@ position: relative;
     top: auto;
     align-self: flex-end;
     width: 16vw;
-    margin: -1vw 1.5vw -4vw 0;
+    margin: -1vw 1.5vw -3vw 0;
   }
 
-  /* LES PAGES DU SITE remonté */
+  /* Espace propre sous LES PAGES DU SITE pour ne plus toucher le 1er bouton */
   h2 {
     position: relative;
     left: auto;
     right: auto;
     top: auto;
     width: 100%;
-    margin: -5vw 0 1.5vw 0;
+    margin: -3vw 0 5.5vw 0;
     text-align: center;
     transform: rotate(-4deg);
     order: 2;
@@ -365,8 +365,9 @@ position: relative;
   }
 
   nav {
-    position: static;
+    position: relative;
     width: 100%;
+    margin-top: 1.5vw;
     order: 3;
   }
 
@@ -377,7 +378,7 @@ position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5vw;
+    gap: 2.5vw;
     counter-reset: item;
   }
 
@@ -395,7 +396,7 @@ position: relative;
     align-items: center;
   }
 
-  /* 1. PERSONA 5 ROYAL + PIOCHE DÉCALÉE À DROITE */
+  /* 1. PERSONA 5 ROYAL + PIOCHE DÉCALÉE */
   .n1 {
     position: relative;
     left: auto;
@@ -438,13 +439,13 @@ position: relative;
     right: auto;
     top: auto;
     width: 8.5vw;
-    margin-left: 11vw;
+    margin-left: 10vw;
     margin-top: 6vw;
     transform: rotate(-12deg);
     z-index: 3;
   }
 
-  /* 2. MINECRAFT SUR #BOUTON_NOIR (SANS OMBRE) */
+  /* 2. MINECRAFT RECENTRÉ SUR #BOUTON_NOIR */
   .n2 {
     position: relative;
     left: auto;
@@ -453,10 +454,10 @@ position: relative;
     width: auto;
     height: auto;
     padding: 0;
-    margin: 2vw 0 -13vw 0;
+    margin: 2vw 0 -12vw 0;
     font-size: 4.8vw;
     line-height: 1.1;
-    transform: translate(-11vw, 15vw) rotate(-6deg);
+    transform: translate(-4vw, 13.5vw) rotate(-6deg);
     z-index: 5;
     pointer-events: none;
     text-shadow: none;
@@ -509,7 +510,7 @@ position: relative;
     z-index: 2;
   }
 
-  /* 3. SONDAGE GRAND SUR #JACK + JOKER DERRIÈRE */
+  /* 3. SONDAGE GRAND + JOKER RECENTRÉ SUR #JACK ET DERRIÈRE LE TEXTE */
   .n3 {
     position: relative;
     left: auto;
@@ -518,7 +519,7 @@ position: relative;
     width: 88vw;
     height: auto;
     padding: 0;
-    margin: 4vw 0 -10vw 0;
+    margin: 5vw 0 -10vw 0;
     font-size: 11vw;
     line-height: 1;
     text-align: center;
@@ -561,7 +562,7 @@ position: relative;
     margin-top: 0;
     margin-left: 2vw;
     transform: rotate(4deg);
-    z-index: 2;
+    z-index: 1;
   }
 
   #Joker {
@@ -569,10 +570,11 @@ position: relative;
     left: auto;
     right: auto;
     top: auto;
-    width: 18vw;
-    margin-top: -18vw;
-    margin-left: -14vw;
-    z-index: 1;
+    width: 17vw;
+    margin-top: -16vw;
+    margin-left: -22vw;
+    transform: rotate(-3deg);
+    z-index: 2;
   }
 
   video {
