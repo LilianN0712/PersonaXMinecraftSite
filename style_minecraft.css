@@ -5,6 +5,8 @@
   src: url('./Font/Minecraftia-Regular.ttf');
 }
 
+
+
 body {
     position: relative;
     padding: 1%;
@@ -37,8 +39,14 @@ body {
     padding: 1vw;
     border-image: url(./Asset/window.png) round;
     border-image-slice: 15%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;
+}
+
+#menu-pig {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
 }
 
 th{
@@ -116,12 +124,9 @@ th{
 
 
 #cochon{
-    padding-right: 2%;
     width: 30vw;
     height:auto;
-    margin-left: 2vw;
-    margin-top: 0vw;
-    float: right;
+    margin: 0;
 }
 
 #logo{
@@ -184,5 +189,77 @@ body:has(#theme_changer:checked) {
 body:has(#theme_changer:checked) .text_blanc {
     color: black;
     text-shadow: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 3%;
+        background-position: center top;
+    }
+
+    .text_blanc {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .bulle {
+        display: none;
+    }
+
+    #menu-pig {
+        flex-direction: column;
+    }
+
+    #table2 {
+        box-sizing: border-box;
+        width: 100%;
+        border-width: 24px;
+        padding: 8px;
+        table-layout: fixed;
+        margin: 16px 0;
+    }
+
+    th {
+        overflow-wrap: anywhere;
+    }
+
+    .image-button {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 4px 0;
+        font-size: 16px;
+    }
+
+    #cochon {
+        display: block;
+        width: 50%;
+        margin: 16px auto;
+    }
+
+    #minecraft,
+    #sign {
+        display: block;
+        float: none;
+        width: 80%;
+        height: auto;
+        margin: 16px auto;
+    }
+
+    #text_droite {
+        margin-left: 0;
+        bottom: auto;
+        text-align: left;
+    }
+
+    #logo {
+        width: 30%;
+        float: none;
+        display: block;
+        margin-left: auto;
+    }
+
+    #button_image {
+        width: 32px;
+    }
 }
 

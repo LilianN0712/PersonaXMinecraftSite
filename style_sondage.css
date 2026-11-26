@@ -119,3 +119,73 @@ body:has(#theme_changer:checked) .text_blanc {
     text-shadow: none;
 }
 
+@media (max-width: 600px) {
+    body {
+        padding: 3%;
+        background-position: center top;
+    }
+
+    #theme_control {
+        margin-left: 0;
+    }
+
+    .text_blanc {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #table {
+        box-sizing: border-box;
+        width: 100%;
+        border-width: 24px;
+        padding: 8px;
+        table-layout: fixed;
+        margin: 16px 0;
+    }
+
+    .image-button {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 4px 0;
+        font-size: 16px;
+    }
+
+    #sondage {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+    }
+
+    #sondage p {
+        margin-top: 0;
+    }
+
+    #sondage label {
+        display: block;
+        margin-top: 10px;
+    }
+
+    #sondage input,
+    #sondage textarea {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #logo {
+        width: 30%;
+        float: none;
+        display: block;
+        margin-left: auto;
+    }
+
+    #button_image {
+        width: 32px;
+    }
+}
+
