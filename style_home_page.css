@@ -289,7 +289,7 @@ position: relative;
 
   body {
     box-sizing: border-box;
-    padding: 12vw 3vw 5vw 3vw;
+    padding: 11vw 3vw 5vw 3vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -302,15 +302,15 @@ position: relative;
     align-self: flex-start;
     font-size: 3.4vw;
     padding: 1.5vw 3vw;
-    margin-bottom: 2vw;
+    margin-bottom: 1.5vw;
     border-radius: 1.5vw;
   }
 
-  /* Titre principal sur une ligne */
+  /* Titre principal */
   h1 {
     position: static;
     width: 100%;
-    margin: 1vw 0 1vw 0;
+    margin: 0.5vw 0 0.5vw 0;
     text-align: center;
     line-height: 1.15;
     white-space: nowrap;
@@ -336,18 +336,18 @@ position: relative;
     right: auto;
     top: auto;
     align-self: flex-end;
-    width: 17vw;
-    margin: -1vw 1.5vw 1vw 0;
+    width: 16vw;
+    margin: -1vw 1.5vw -2vw 0;
   }
 
-  /* Sous-titre */
+  /* Sous-titre remonté */
   h2 {
     position: relative;
     left: auto;
     right: auto;
     top: auto;
     width: 100%;
-    margin: 0 0 3vw 0;
+    margin: -1.5vw 0 2.5vw 0;
     text-align: center;
     transform: rotate(-4deg);
     order: 2;
@@ -367,7 +367,7 @@ position: relative;
     margin: 0 0.5vw;
   }
 
-  /* Liste des boutons */
+  /* Liste et boutons */
   nav {
     position: static;
     width: 100%;
@@ -381,7 +381,7 @@ position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2vw;
+    gap: 1.5vw;
     counter-reset: item;
   }
 
@@ -399,17 +399,17 @@ position: relative;
     align-items: center;
   }
 
-/* --- 1. PERSONA 5 ROYAL + PIOCHE --- */
+  /* 1. PERSONA 5 ROYAL + PIOCHE DÉCALÉE À DROITE */
   .n1 {
     position: relative;
     left: auto;
     right: auto;
     top: auto;
-    width: 76vw;
+    width: 74vw;
     height: 11vw;
     padding: 0 3vw;
-    margin-left: 8vw;
-    font-size: 4.6vw;
+    margin-left: 4vw;
+    font-size: 4.5vw;
     line-height: 11vw;
     background-size: 11vw;
     transform: rotate(7deg);
@@ -433,7 +433,7 @@ position: relative;
     left: auto;
     right: auto;
     top: auto;
-    font-size: 4.6vw;
+    font-size: 4.5vw;
   }
 
   #Pioche {
@@ -442,13 +442,13 @@ position: relative;
     right: auto;
     top: auto;
     width: 8.5vw;
-    margin-left: -4vw;
-    margin-top: 4vw;
+    margin-left: 2.5vw;
+    margin-top: 5vw;
     transform: rotate(-12deg);
     z-index: 3;
   }
 
-  /* --- 2. MINECRAFT SUR #BOUTON_NOIR + PHANTOM LOGO (SANS OMBRE) --- */
+  /* 2. MINECRAFT SUR #BOUTON_NOIR (SANS OMBRE) */
   .n2 {
     position: relative;
     left: auto;
@@ -457,12 +457,13 @@ position: relative;
     width: auto;
     height: auto;
     padding: 0;
-    margin: 7.5vw 0 0 -16vw;
+    margin: 4vw 0 -9.5vw -14vw;
     font-size: 4.8vw;
     line-height: 1.1;
     transform: rotate(-6deg);
     z-index: 4;
     pointer-events: none;
+    text-shadow: none;
     counter-increment: item;
   }
 
@@ -494,7 +495,7 @@ position: relative;
     right: auto;
     top: auto;
     width: 64vw;
-    margin-top: -11vw;
+    margin-top: 0;
     margin-left: -4vw;
     transform: rotate(-6deg);
     z-index: 1;
@@ -512,20 +513,21 @@ position: relative;
     z-index: 2;
   }
 
-  /* --- 3. SONDAGE SUR #JACK + JOKER (SANS OMBRE) --- */
+  /* 3. SONDAGE GRAND SUR #JACK + JOKER DERRIÈRE */
   .n3 {
     position: relative;
     left: auto;
     right: auto;
     top: auto;
-    width: auto;
+    width: 72vw;
     height: auto;
     padding: 0;
-    margin: 5vw 0 0 2vw;
-    font-size: 6.5vw;
-    line-height: 1.1;
+    margin: 4vw 0 -10.5vw -2vw;
+    font-size: 8.5vw;
+    line-height: 1;
+    text-align: center;
     transform: rotate(4deg);
-    z-index: 4;
+    z-index: 5;
     pointer-events: none;
     text-shadow: none;
     counter-increment: item;
@@ -558,11 +560,11 @@ position: relative;
     left: auto;
     right: auto;
     top: auto;
-    width: 56vw;
-    margin-top: -13vw;
-    margin-left: 4vw;
+    width: 58vw;
+    margin-top: 0;
+    margin-left: 2vw;
     transform: rotate(4deg);
-    z-index: 1;
+    z-index: 2;
   }
 
   #Joker {
@@ -570,13 +572,13 @@ position: relative;
     left: auto;
     right: auto;
     top: auto;
-    width: 17vw;
-    margin-top: -22vw;
-    margin-left: -10vw;
-    z-index: 3;
+    width: 18vw;
+    margin-top: -18vw;
+    margin-left: -12vw;
+    z-index: 1;
   }
 
-  /* --- VIDÉO EN BAS + LOGO À DROITE --- */
+  /* Vidéo en bas + Logo à droite */
   video {
     position: static;
     left: auto;
@@ -584,7 +586,7 @@ position: relative;
     top: auto;
     width: 92vw;
     max-width: 92vw;
-    margin: 14vw 0 3vw 0;
+    margin: 12vw 0 3vw 0;
     order: 4;
   }
 
