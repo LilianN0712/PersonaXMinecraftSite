@@ -370,6 +370,7 @@ position: relative;
   }
 
   nav ol li {
+    position: relative;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -384,6 +385,7 @@ position: relative;
     width: 74vw;
     height: 11vw;
     padding: 0 3vw;
+    margin-left: 0;
     font-size: 4.5vw;
     line-height: 11vw;
     background-size: 11vw;
@@ -437,6 +439,7 @@ position: relative;
     color: rgba(186, 10, 10, 0.95);
     font-family: Minecraft;
     margin-right: 1vw;
+    text-shadow: none;
   }
 
   .n2::marker {
@@ -453,6 +456,7 @@ position: relative;
   #Bouton_Noir {
     position: relative;
     width: 64vw;
+    margin-top: 0;
     margin-left: -4vw;
     transform: rotate(-6deg);
     z-index: 1;
@@ -488,6 +492,7 @@ position: relative;
     color: #ffffff;
     font-family: Minecraft;
     margin-right: 1vw;
+    text-shadow: none;
   }
 
   .n3::marker {
@@ -505,6 +510,7 @@ position: relative;
   #Jack {
     position: relative;
     width: 64vw;
+    margin-top: 0;
     margin-left: 2vw;
     transform: rotate(4deg);
     z-index: 1;
