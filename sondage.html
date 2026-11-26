@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Page de Sondage</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style_sondage.css">
+        <link rel="icon" type="image/png" href="./Asset/Logo.png">
+    </head>
+    <body>
+        <header>
+            <h1 id="titre" class="text_blanc">Sondage</h1>
+        </header>
+        
+        <input type="checkbox" id="theme_changer">
+
+        <div id="theme_control">
+            <label for="theme_changer" id="theme_button">
+                <img id="button_image" src="Asset/Checkbox.png" alt="changer thème">
+            </label>
+            <span class="text_blanc", id ="theme_text"> changer thème</span>
+        </div>
+
+        <div class="flex">
+            <table id = "table">
+                <tr>
+                    <td>
+                        <nav>
+                            <a href="lien.html" class="image-button">Accueil</a>
+                            <br>
+
+                            <a href="minecraft.html" class="image-button">Minecraft</a>
+                            <br>
+
+                            <a href="lien.html" class="image-button">Persona 5</a>
+                            <br>
+
+                            <a href="sondage.html" class="image-button">Sondage</a>
+                        </nav>
+                    </td>
+                </tr>
+            </table>
+            <form id="sondage">
+                <section class ="text_blanc">
+                    <p>qu'en penser vous ? On vous répond !</p>
+                </section>
+                <label for="pseudo" class="text_blanc">Pseudo:</label>
+                <input type="text" id="pseudo" name="pseudo">
+                <br>
+                <label for="quantite" class="text_blanc">Votre Age:</label>
+                <input type="number" id="quantite" name="quantite" min="1" max="99" placeholder="1-99">
+                <br>
+                <label for="email" class="text_blanc">Votre Mail:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com">
+                <br>
+                <label for="phone" class="text_blanc">Numéro de Téléphone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+(33)123-45-678">
+                <br>
+                <label for="avis" class="text_blanc">Votre avis :</label>
+                <textarea id="avis" name="avis" placeholder="des chose à dire ?"></textarea>
+                <br>
+                <button type="submit" >Envoyer</button>
+
+            </form>
+
+        </div>
+        <footer>
+            <img align="right" id = "logo" src="./Asset/Logo.png" alt ="logo">
+        </footer>
+    </body>
+</html>

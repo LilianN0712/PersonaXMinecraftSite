@@ -1,0 +1,233 @@
+
+
+@font-face {
+  font-family: 'Minecraftia';
+  src: url('./Font/Minecraftia-Regular.ttf');
+}
+
+body {
+    position: relative;
+    padding: 1%;
+    font-family: 'Minecraftia';
+    background-image: url("./Asset/Minecraft_Background_Foncee.png")
+}
+
+
+#titre{
+    position: absolute;
+    left: 50%;
+    top: 2%;
+    transform: translateX(-50%);
+    font-size: 7vw;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+#table{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#table2{
+    border: 60px solid transparent;
+    padding: 3x;
+    border-image: url(./Asset/window.png) round;
+    border-image-slice: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th{
+    text-align:left;
+}
+
+.vide{
+    width: 5%;
+}
+
+.bulle{
+    width: 6vw;
+    height: auto;
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+}
+
+#bulle1{
+    top: 5%;
+    right: 2%;
+}
+
+
+#bulle2{
+    top: 60%;
+    right: 4%;
+}
+
+
+#bulle3{
+    top: 75%;
+    left: 4%;
+}
+
+
+.text_blanc{
+    color: whitesmoke;
+    font-family: Minecraftia;
+    font-size: 1.5vw;
+    text-shadow: 0.5vw 0.5vh 0vw rgba(0,0,0,1);
+}
+
+.text_noire{
+    color: black;
+    font-family: Minecraftia;
+    font-size: 1.5vw;
+    text-shadow: 0.5vw 0.5vh 0vw rgba(0,0,0,1);
+}
+
+#eye{
+    width: 10vw;
+    height: auto;
+    position: relative;
+    left: 10%;
+
+}
+#eye2{
+    width: 10vw;
+    height: auto;
+    position: relative;
+    right: 10%;
+
+}
+
+.image-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    margin: 0.2vw;
+
+    background-image: url("./Asset/button.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: none;
+    color: black;
+    font-size: 1.5vw;
+    font-family: 'Minecraftia', sans-serif;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+nav{
+    margin-left: 0%;
+    
+}
+
+.center{
+    position: absolute;
+    top: -20;
+    left: 20;
+    font-family: Minecraftia;
+    font-size: 140%;
+    color: black;
+}
+
+
+#cochon{
+    padding-right: 2%;
+    width: 30vw;
+    height:auto;
+    margin-left: 2vw;
+    margin-top: 0vw;
+}
+
+#logo{
+    width: 15vw;
+    height: auto;
+}
+
+input{
+    width: 20vw;
+    height: auto;
+}
+
+#menu{
+    width: 20vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#text_droite{
+    text-align: right;
+    position: relative;
+    margin-left: 30vw;
+    bottom: 10%;
+}
+
+#sign{
+    width: 30vw;
+    height: auto;
+
+}
+
+#minecraft {
+    width: 40vw;
+    height: auto;
+    float: right;
+    margin-left: 2vw;
+    margin-right: 0;
+}
+
+section {
+    text-align: left;
+}
+
+
+#theme_changer {
+    display: none;
+}
+
+#theme_control {
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+}
+
+#theme_button {
+    cursor: pointer;
+    display: inline-block;
+}
+
+#theme_text{
+    margin-left: 1vw;
+}
+
+body:has(#theme_changer:checked) #theme_label {
+    color: black;
+}
+
+#button_image {
+    width: 4vw;
+    height: auto;
+
+}
+
+body:has(#theme_changer:checked) {
+    background-image: url("./Asset/Minecraft_Background_Claire.png");
+}
+
+
+body:has(#theme_changer:checked) .text_blanc {
+    color: black;
+    text-shadow: none;
+}
+

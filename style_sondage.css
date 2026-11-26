@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'Minecraftia';
+  src: url('./Font/Minecraftia-Regular.ttf');
+}
+
+body {
+    position: relative;
+    padding: 1%;
+    font-family: 'Minecraftia';
+    background-image: url("./Asset/sondage_background_Normale.png");
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-color: black;
+
+}
+
+#titre{
+    margin: 0%;
+    position: relative;
+    font-size: 7vw;
+    text-align: right;
+}
+
+.text_blanc{
+    color: whitesmoke;
+    vertical-align: middle;
+    font-family: Minecraftia;
+    font-size: 1.5vw;
+    text-shadow: 0.5vw 0.5vh 0vw rgba(0,0,0,1);
+}
+
+.text_noire{
+    color: black;
+    font-family: Minecraftia;
+    font-size: 1.5vw;
+    text-shadow: 0.5vw 0.5vh 0vw rgba(0,0,0,1);
+}
+
+
+.image-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    margin: 0.2vw;
+
+    background-image: url("./Asset/button.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: none;
+    color: black;
+    font-size: 1.5vw;
+    font-family: 'Minecraftia', sans-serif;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#table{
+    border: 60px solid transparent;
+    padding: 3x;
+    border-image: url(./Asset/window.png) round;
+    border-image-slice: 15%;
+    margin-left: 4vw;
+    margin-right: auto;
+    background-image: url(./Asset/Minecraft_Background_Foncee.png);
+}
+
+nav{
+    margin-left: 0%;
+    
+}
+
+input {
+    vertical-align: middle;
+}
+textarea{
+    vertical-align: middle;
+}
+
+#sondage{
+    margin-right: 6vw;
+
+}
+.flex {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+#logo{
+    width: 15vw;
+    height: auto;
+}
+
+
+#theme_changer {
+    display: none;
+}
+
+#theme_control {
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+}
+
+#theme_button {
+    cursor: pointer;
+    display: inline-block;
+}
+
+#theme_text{
+    margin-left: 1vw;
+}
+
+body:has(#theme_changer:checked) #theme_label {
+    color: black;
+}
+
+#button_image {
+    width: 4vw;
+    height: auto;
+
+}
+
+body:has(#theme_changer:checked) {
+    background-image: url("./Asset/sondage_background_switch.jpg");
+}
+
+
+body:has(#theme_changer:checked) .text_blanc {
+    color: black;
+    text-shadow: none;
+}
+
