@@ -245,7 +245,7 @@ position: relative;
     line-height: 3vw;
     transform: rotate(16deg);
     margin: 0vw;
-    list-style-type: nums;
+    list-style-type: "3:";
     list-style-position: inside;
 }
 
