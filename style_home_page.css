@@ -4,6 +4,14 @@ body{
     background-repeat: no-repeat;
 }
 
+body.alternative-theme {
+    background-image: url(./Asset/Persona3_background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
 @font-face {
     font-family: Persona5;
     src: url(./Font/Persona5MenuFontPrototype-Regular.ttf);
@@ -25,6 +33,12 @@ body{
   suffix: ":";
 }
 
+body.alternative-theme h1 .debut,
+body.alternative-theme h1 .milieu,
+body.alternative-theme h1 .fin {
+    font-family: Persona5;
+    color: rgb(0, 0, 0);
+}
 h1 .debut{
 font-family: Persona5;
   color: white;
@@ -69,6 +83,13 @@ position: relative;
   top: 63.2vw;
 }
 
+body.alternative-theme h2 .debut,
+body.alternative-theme h2 .milieu,
+body.alternative-theme h2 .milieu2,
+body.alternative-theme h2 .fin {
+    font-family: Persona5;
+    color: rgb(123, 12, 12);
+}
 h2 .debut{
     font-family: Persona5;
     color: rgb(144, 139, 139);
