@@ -446,7 +446,7 @@ position: relative;
   }
 
   /* 2. MINECRAFT RECENTRÉ SUR #BOUTON_NOIR */
-  .n2 {
+.n2 {
     position: relative;
     left: auto;
     right: auto;
@@ -457,7 +457,7 @@ position: relative;
     margin: 2vw 0 -12vw 0;
     font-size: 4.8vw;
     line-height: 1.1;
-    transform: translate(-4vw, 13.5vw) rotate(-6deg);
+    transform: translate(-4vw, 17.5vw) rotate(-6deg);
     z-index: 5;
     pointer-events: none;
     text-shadow: none;
@@ -511,7 +511,7 @@ position: relative;
   }
 
   /* 3. SONDAGE GRAND + JOKER RECENTRÉ SUR #JACK ET DERRIÈRE LE TEXTE */
-  .n3 {
+.n3 {
     position: relative;
     left: auto;
     right: auto;
@@ -523,7 +523,7 @@ position: relative;
     font-size: 11vw;
     line-height: 1;
     text-align: center;
-    transform: translate(-1vw, 2vw) rotate(4deg);
+    transform: translate(-1vw, 5.5vw) rotate(4deg);
     z-index: 5;
     pointer-events: none;
     text-shadow: none;
@@ -564,14 +564,13 @@ position: relative;
     transform: rotate(4deg);
     z-index: 1;
   }
-
-  #Joker {
+#Joker {
     position: relative;
     left: auto;
     right: auto;
     top: auto;
     width: 17vw;
-    margin-top: -16vw;
+    margin-top: -12.5vw;
     margin-left: -22vw;
     transform: rotate(-3deg);
     z-index: 2;
